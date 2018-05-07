@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="http://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="MarkRosenSoundboard.js"></script>      
+
+</head>
+<body onload="load()">
+  <h2>Click to play a sound</h2>
+  <div>
+    <button type="button" id="s1" onclick="playSound(this.id)">The Beaver!</button>
+    <button type="button" id="s2" onclick="playSound(this.id)">The Beezer!</button>
+    <button type="button" id="s3" onclick="playSound(this.id)">That's Quite the Tug</button>
+	<button type="button" id="s4" onclick="playSound(this.id)">Not The Beaver</button>
+	<button type="button" id="s5" onclick="playSound(this.id)">Daddy's Enjoying This</button>
+	<button type="button" id="s6" onclick="playSound(this.id)">I've Done It!!</button>
+	<button type="button" id="s7" onclick="playSound(this.id)">The Angry Dragons!</button>
+	<button type="button" id="s8" onclick="playSound(this.id)">Yeah This Game Sucks</button>
+  </div>
+  <button type="button" onClick="createjs.Sound.stop()">STOP ALL</button>
+  <h2>Options</h2>
+  <div>
+    <button type="button" id="repeatBtn" onClick="repeat()">Repeat: Off</button>
+  </div>
+</body>
+</html>
