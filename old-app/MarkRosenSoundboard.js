@@ -9,14 +9,14 @@ function load()
     queue = new createjs.LoadQueue(false);
     queue.installPlugin(createjs.Sound);
     queue.loadManifest([
-		{id: "s1", src: "The Beaver!.mp3"},
-        {id: "s2", src: "The Beezer!.mp3"},
-        {id: "s3", src: "That's Quite the Tug.mp3"},
-        {id: "s4", src: "Not The Beaver.mp3"},
-        {id: "s5", src: "Daddy's Enjoying This.mp3"},
-        {id: "s6", src: "I've Done It!!.mp3"},
-        {id: "s7", src: "The Angry Dragons!.mp3"},
-		{id: "s8", src: "Yeah This Game Sucks.mp3"}
+		{id: "s1", src: "theBeaver.mp3"},
+        {id: "s2", src: "theBeezer.mp3"},
+        {id: "s3", src: "thatsQuiteTheTug.mp3"},
+        {id: "s4", src: "notTheBeaver.mp3"},
+        {id: "s5", src: "daddysEnjoyingThis.mp3"},
+        {id: "s6", src: "iveDoneIt.mp3"},
+        {id: "s7", src: "theAngryDragons.mp3"},
+		{id: "s8", src: "yeahThisGameSucks.mp3"}
     ]);
 
     rB = document.getElementById("repeatBtn");
