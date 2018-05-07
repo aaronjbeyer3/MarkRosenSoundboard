@@ -1,0 +1,82 @@
+﻿@charset "utf-8";
+
+@font-face {
+   font-family: Origicide;
+   src: url(ag_origicide.woff) format('woff'), 
+        url(ag_origicide.ttf) format('truetype');
+}
+
+
+/* HTML and Body Styles */
+
+html {
+	background: url(../images/markRosen.jpg) repeat;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+
+body {  
+	padding: 20px;
+	background: url(../images/back.jpg);
+	margin: 0px;
+	width: auto;
+}
+
+h1, h2 {
+	color: white;
+}
+
+#sounds button {
+    background-color: #4CAF50; /* Green */
+    border: 2px solid #007412;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 12px;
+	margin: 5px;
+}
+
+#options button {
+    background-color: #008CBA; /* Green */
+    border: 2px solid #002A74;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 12px;
+	margin: 5px;
+}
+
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width: 769px) {
+	
+	body {
+		width: 1200px;
+		margin: 0px auto;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

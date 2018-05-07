@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+	<meta name="viewport" content="width=device-width">
+	
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<script src="http://code.createjs.com/createjs-2015.11.26.min.js"></script>
 	<script src="MarkRosenSoundboard.js"></script>      
 
 </head>
 <body onload="load()">
+	<h1>Mark Rosen Soundboard</h1>
+
 	<h2>Click to play a sound</h2>
-	<div>
-		<button type="button" id="s1" onclick="playSound(this.id)">The Beaver!</button>
-		<button type="button" id="s2" onclick="playSound(this.id)">The Beezer!</button>
+	<div id="sounds">
+		<button type="button" id="s1" onclick="playSound(this.id)">The Beaver</button>
+		<button type="button" id="s2" onclick="playSound(this.id)">The Beezer</button>
 		<button type="button" id="s3" onclick="playSound(this.id)">That's Quite the Tug</button>
 		<button type="button" id="s4" onclick="playSound(this.id)">Not The Beaver</button>
 		<button type="button" id="s5" onclick="playSound(this.id)">Daddy's Enjoying This</button>
-		<button type="button" id="s6" onclick="playSound(this.id)">I've Done It!!</button>
-		<button type="button" id="s7" onclick="playSound(this.id)">The Angry Dragons!</button>
-		<button type="button" id="s8" onclick="playSound(this.id)">Yeah This Game Sucks</button>
+		<button type="button" id="s6" onclick="playSound(this.id)">I've Done It</button>
+		<button type="button" id="s7" onclick="playSound(this.id)">The Angry Dragons</button>
+		<button type="button" id="s8" onclick="playSound(this.id)">Yeah This Game Sucks</button>		
+		<button type="button" id="s9" onclick="playSound(this.id)">69</button>
+		<button type="button" id="s10" onclick="playSound(this.id)">Maybe 69</button>
+		<button type="button" id="s12" onclick="playSound(this.id)">69 v3</button>
+		<button type="button" id="s13" onclick="playSound(this.id)">69 v4</button>
+		<button type="button" id="s14" onclick="playSound(this.id)">69 v5</button>
+		<button type="button" id="s15" onclick="playSound(this.id)">Ask For It You Got It</button>
+		<button type="button" id="s16" onclick="playSound(this.id)">Back Up</button>
+		<button type="button" id="s17" onclick="playSound(this.id)">Come On Willy</button>
+		<button type="button" id="s18" onclick="playSound(this.id)">Good God</button>
+		<button type="button" id="s19" onclick="playSound(this.id)">Idaho Potato Sack</button>
+		<button type="button" id="s20" onclick="playSound(this.id)">I'm Ready</button>
+		<button type="button" id="s21" onclick="playSound(this.id)">Look What Ya Done Started</button>
+		<button type="button" id="s22" onclick="playSound(this.id)">Nipple</button>
+		<button type="button" id="s23" onclick="playSound(this.id)">Pass</button>
+		<button type="button" id="s24" onclick="playSound(this.id)">See Ya Later I'm Gone</button>
+		<button type="button" id="s25" onclick="playSound(this.id)">Still Not A Playa</button>
+		<button type="button" id="s26" onclick="playSound(this.id)">Swedish Sombrero</button>
+		<button type="button" id="s27" onclick="playSound(this.id)">Texas Chili Bowl</button>
+		<button type="button" id="s28" onclick="playSound(this.id)">That's Quite The Tug</button>
+		<button type="button" id="s29" onclick="playSound(this.id)">The Hell Channel Is This?</button>
+		<button type="button" id="s30" onclick="playSound(this.id)">Well I'm Stupid</button>
+		<button type="button" id="s31" onclick="playSound(this.id)">Where's Security</button>
 	</div>
 	
-	<button type="button" onClick="createjs.Sound.stop()">STOP ALL</button>
-	
 	<h2>Options</h2>
-	<div>
+	<div id="options">
+		<button type="button" onClick="createjs.Sound.stop()">STOP ALL</button>
 		<button type="button" id="repeatBtn" onClick="repeat()">Repeat: Off</button>
 	</div>
 </body>
