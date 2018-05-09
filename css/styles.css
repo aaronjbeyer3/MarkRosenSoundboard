@@ -17,7 +17,6 @@ html {
 
 body {  
 	padding: 20px;
-	background: url(../images/back.jpg);
 	margin: 0px;
 	width: auto;
 }
@@ -27,7 +26,7 @@ h1, h2 {
 }
 
 #sounds button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: 2px solid #007412;
     color: white;
     padding: 15px 32px;
@@ -40,7 +39,7 @@ h1, h2 {
 }
 
 #options button {
-    background-color: #008CBA; /* Green */
+    background-color: #008CBA;
     border: 2px solid #002A74;
     color: white;
     padding: 15px 32px;
@@ -62,6 +61,7 @@ h1, h2 {
 	body {
 		width: 1200px;
 		margin: 0px auto;
+		background: url(../images/back.jpg);
 	}
 	
 }
