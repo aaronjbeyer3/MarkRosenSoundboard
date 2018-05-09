@@ -35,7 +35,6 @@ function load()
 		{id: "s25", src: "mp3/stillNotAPlaya.mp3"},
 		{id: "s26", src: "mp3/swedishSombrero.mp3"},
 		{id: "s27", src: "mp3/texasChiliBowl.mp3"},
-		{id: "s28", src: "mp3/thatsQuiteTheTug.mp3"},
 		{id: "s29", src: "mp3/theHellChannelIsThis.mp3"},
 		{id: "s30", src: "mp3/wellImStupid.mp3"},
 		{id: "s31", src: "mp3/wheresSecurity.mp3"}
