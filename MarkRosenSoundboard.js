@@ -6,9 +6,10 @@ var rB;
 // Load function: called onLoad of body
 function load()
 {
+	// Load sounds
     queue = new createjs.LoadQueue(false);
     queue.installPlugin(createjs.Sound);
-    queue.loadManifest([
+	queue.loadManifest([
 		{id: "s1", src: "mp3/theBeaver.mp3"},
         {id: "s2", src: "mp3/theBeezer.mp3"},
         {id: "s3", src: "mp3/thatsQuiteTheTug.mp3"},
@@ -39,13 +40,31 @@ function load()
 		{id: "s30", src: "mp3/wellImStupid.mp3"},
 		{id: "s31", src: "mp3/wheresSecurity.mp3"}
     ]);
+	
+	// Fix for AudioContext bug
+	var resumeAudioContext = function() {
+		// handler for fixing suspended audio context in Chrome
+		try {
+			if (createjs.WebAudioPlugin.context.state === "suspended") {
+				createjs.WebAudioPlugin.context.resume();
+				
+				// Should only need to fire once
+				window.removeEventListener("click", resumeAudioContext);
+			}
+		} catch (e) {
+			// SoundJS context or web audio plugin may not exist
+			console.error("There was an error while trying to resume the SoundJS Web Audio context...");
+			console.error(e);
+		}
+	};
+	window.addEventListener("click", resumeAudioContext);
 
     rB = document.getElementById("repeatBtn");
 }
 
 function playSound(sound_name)
 {
-    createjs.Sound.resume(sound_name, "none", 0, 0, onRepeat, 1, 0, null, null);
+    createjs.Sound.play(sound_name, "none", 0, 0, onRepeat, 1, 0, null, null);
 }
 
 function repeat()
