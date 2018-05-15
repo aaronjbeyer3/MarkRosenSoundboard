@@ -45,7 +45,7 @@ function load()
 
 function playSound(sound_name)
 {
-    createjs.Sound.play(sound_name, "none", 0, 0, onRepeat, 1, 0, null, null);
+    createjs.Sound.resume(sound_name, "none", 0, 0, onRepeat, 1, 0, null, null);
 }
 
 function repeat()
